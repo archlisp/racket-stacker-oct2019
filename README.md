@@ -32,11 +32,6 @@ raco pkg install sicp
 
 ## Starting Geiser in Emacs
 
-1. ~`M-x run-geiser` in a `*.rkt` file.~
-2. ~Pick `racket` implementation.~
-
 1. Nevermind, just do `M-x run-racket` instead.
-2. Evaluate at the REPL: `,enter "lecture-1a.rkt"`
+2. Evaluate at the REPL: `,enter "stacker.rkt"`
 3. From then on you can `C-x C-e` to load a single form.
-
-Check out [`lecture-1a.rkt`](lecture-1a.rkt), we go through most of the exercises in the book.
