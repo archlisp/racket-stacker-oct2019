@@ -6,6 +6,4 @@
 ;;;; `C-c C-c` will evaluate the form and show in the Emacs gutter.
 ;;;; Geiser Cheat Sheet: http://www.nongnu.org/geiser/geiser_5.html
 
-
 42
-
