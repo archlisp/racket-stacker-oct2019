@@ -30,8 +30,20 @@ It worked!
 raco pkg install sicp
 ```
 
+We need `beautiful-racket` for `br/*` stuff.
+
+```
+raco pkg install beautiful-racket
+```
+
 ## Starting Geiser in Emacs
 
-1. Nevermind, just do `M-x run-racket` instead.
-2. Evaluate at the REPL: `,enter "stacker.rkt"`
-3. From then on you can `C-x C-e` to load a single form.
+`C-c C-z` to launch your REPL from one of the rkt files.
+
+`C-c C-k` to compile and load your file in the repl.
+
+`C-x C-e` will evaluate the form and show it in the debug buffer.
+
+`C-c C-c` will evaluate the form and show in the Emacs gutter.
+
+Geiser Cheat Sheet: http://www.nongnu.org/geiser/geiser_5.html
