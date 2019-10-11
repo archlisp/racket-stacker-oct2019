@@ -15,7 +15,6 @@
 ;; corre­spond to real Racket expres­sions (which are then eval­u­ated to produce a
 ;; result).
 
-
 (define (read-syntax path port)
   (define src-lines (port->lines port))
   (define src-datums (format-datums '(handle ~a) src-lines))
@@ -27,7 +26,8 @@
 (define-macro (stacker-module-begin HANDLE-EXPR ...)
   #'(#%module-begin
      HANDLE-EXPR ...
-     (display (first stack))))
+     (display (first stack))
+     (display "\n")))
 (provide (rename-out [stacker-module-begin #%module-begin]))
 
 (define stack empty)
