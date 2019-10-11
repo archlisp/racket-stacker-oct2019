@@ -14,3 +14,10 @@
 ;; (Yacc?) An expander, which deter­mines how these paren­the­sized forms
 ;; corre­spond to real Racket expres­sions (which are then eval­u­ated to produce a
 ;; result).
+
+
+(define (read-syntax path port)
+  (define src-lines (port->lines port))
+  (datum->syntax #f '(module lucy br
+                       42)))
+(provide read-syntax)
